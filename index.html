@@ -4,7 +4,7 @@
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
     <meta charset="utf-8">
 
-    <meta property="og:image" content="https://thepatr10t.github.io/yall-Qaeda/yqs.png">
+    <meta property="og:image" content="https://TheBlindEye.github.io/yall-Qaeda/yqs.png">
     <meta property="og:title" content="Mapping videos of the capitol seige">
     <meta property="og:description" content="Mapping videos during the capitol seige">
     <meta property="og:image:width" content="1600">
@@ -13,11 +13,11 @@
 
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Mapping videos of the capitol seige">
-    <meta name="twitter:url" content="https://thepatr10t.github.io/yall-Qaeda/">
-    <meta name="twitter:image" content="https://thepatr10t.github.io/yall-Qaeda/yqs.png">
+    <meta name="twitter:url" content="https://TheBlindEye.github.io/yall-Qaeda/">
+    <meta name="twitter:image" content="https://TheBlindEye.github.io/yall-Qaeda/yqs.png">
     <meta name="twitter:description" content="Mapping videos during the capitol seige">
 
-    <title>Mapping videos of the capitol seige</title>
+    <title>Mapping videos of the Capitol Attack</title>
     <style>
       html, body {
         height: 90%;
@@ -55,7 +55,12 @@
 <center>
 <h3>Mapping the videos of the Capitol building attack</h3>
 </center>
-<b><h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hint : click the red markers! New ones are being uploaded slowly.... <a target=_blank href='https://github.com/ThePatr10t/yall-Qaeda'>Feature requests here</a></h2></b>
+<h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hint : click the red markers! New ones are being uploaded slowly....</h2>
+	  <p><ul><b>Thank you to:</b>
+	<li> <a target=_blank href='https://github.com/ThePatr10t/yall-Qaeda'>ThePatr10t - this project is a fork of their project</a></li>
+	  <li> <a target=_blank href='https://www.tommycarstensen.com/terrorism/'>Tommy Carstensen - sharing videos and hosting videos</a></li>
+	  </ul>
+	
 
 <div id="c">
 	<div id="map"></div>
@@ -66,7 +71,7 @@
 
     <script>
       var map;
-      var src = 'https://thepatr10t.github.io/yall-Qaeda/DC20.kml';
+      var src = 'https://TheBlindEye.github.io/yall-Qaeda/DC20.kml';
 
       function initMap() {
         map = new google.maps.Map(document.getElementById('map'), {
@@ -89,8 +94,9 @@
 			if(s.includes("dailymotion")){
 				content = '<iframe frameborder="0" width="640" height="360" src="'+s+'?queue-enable=false"; allowfullscreen allow="autoplay"></iframe>';
 			}
-			if(s.includes("youtube")){
-				content = '<iframe width="800" height="600" src="'+s+'" frameborder="0" allowfullscreen></iframe>'
+			if(s.includes("tommycarstensen")){
+				content = '<video width="800" height="600" controls><source src="'+s+'" type="video/mp4">Your browser does not support the video tag.</video>'
+				 
 			}
 		}
 		console.log(content);
@@ -107,7 +113,7 @@
 
 
     <script defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAAFYwkWgVLa5lKgfh0OHqWS8PiXGTfJf8&callback=initMap">
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDi2Ki7SWPVg4Id_-7rVkdPuqZo8EzcmrI&callback=initMap">
     </script>
 
 
